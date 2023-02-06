@@ -535,11 +535,11 @@ function renderAllTeams(teams, logos) {
     logos.map((logo) => {
       if (team.teamId === logo.id) {
         const teamLogo = teamTemplateClone.querySelector("[data-nhl-logo]");
-        teamLogo.src = `./imgs/logos/${logo.image}`;
+        teamLogo.src = `/imgs/logos/${logo.image}`;
         const teamLogoPopup = teamTemplateClone.querySelector(
           "[data-nhl-logo-popup]"
         );
-        teamLogoPopup.src = `./imgs/logos/${logo.image}`;
+        teamLogoPopup.src = `/imgs/logos/${logo.image}`;
       }
     });
     allTeamsContainer.appendChild(teamTemplateClone);
@@ -649,11 +649,11 @@ function renderEastTeams(teams, logos) {
     logos.map((logo) => {
       if (team.teamId === logo.id) {
         const teamLogo = teamTemplateClone.querySelector("[data-nhl-logo]");
-        teamLogo.src = `./imgs/logos/${logo.image}`;
+        teamLogo.src = `/imgs/logos/${logo.image}`;
         const teamLogoPopup = teamTemplateClone.querySelector(
           "[data-nhl-logo-popup]"
         );
-        teamLogoPopup.src = `./imgs/logos/${logo.image}`;
+        teamLogoPopup.src = `/imgs/logos/${logo.image}`;
       }
     });
 
@@ -765,11 +765,11 @@ function renderWestTeams(teams, logos) {
     logos.map((logo) => {
       if (team.teamId === logo.id) {
         const teamLogo = teamTemplateClone.querySelector("[data-nhl-logo]");
-        teamLogo.src = `./imgs/logos/${logo.image}`;
+        teamLogo.src = `/imgs/logos/${logo.image}`;
         const teamLogoPopup = teamTemplateClone.querySelector(
           "[data-nhl-logo-popup]"
         );
-        teamLogoPopup.src = `./imgs/logos/${logo.image}`;
+        teamLogoPopup.src = `/imgs/logos/${logo.image}`;
       }
     });
 
