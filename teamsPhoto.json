@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "image": "New Jersey Devils.jpg"
+  },
+  {
+    "id": 2,
+    "image": "New York Islanders.jpg"
+  },
+  {
+    "id": 3,
+    "image": "New York Rangers.jpg"
+  },
+  {
+    "id": 4,
+    "image": "Philadelphia Flyers.jpg"
+  },
+  {
+    "id": 5,
+    "image": "Pittsburgh Penguins.jpg"
+  },
+  {
+    "id": 6,
+    "image": "Boston Bruins.jpg"
+  },
+  {
+    "id": 7,
+    "image": "Buffalo Sabres.jpg"
+  },
+  {
+    "id": 8,
+    "image": "Montréal Canadiens.jpg"
+  },
+  {
+    "id": 9,
+    "image": "Ottawa Senators.jpg"
+  },
+  {
+    "id": 10,
+    "image": "Toronto Maple Leafs.jpg"
+  },
+  {
+    "id": 12,
+    "image": "Carolina Hurricanes.jpg"
+  },
+  {
+    "id": 13,
+    "image": "Florida Panthers.jpg"
+  },
+  {
+    "id": 14,
+    "image": "Tampa Bay Lightning.jpg"
+  },
+  {
+    "id": 15,
+    "image": "Washington Capitals.jpg"
+  },
+  {
+    "id": 16,
+    "image": "Chicago Blackhawks.jpg"
+  },
+  {
+    "id": 17,
+    "image": "Detroit Red Wings.jpg"
+  },
+  {
+    "id": 18,
+    "image": "Nashville Predators.jpg"
+  },
+  {
+    "id": 19,
+    "image": "St. Louis Blues.jpg"
+  },
+  {
+    "id": 20,
+    "image": "Calgary Flames.jpg"
+  },
+  {
+    "id": 21,
+    "image": "Colorado Avalanche.jpg"
+  },
+  {
+    "id": 22,
+    "image": "Edmonton Oilers.jpg"
+  },
+  {
+    "id": 23,
+    "image": "Vancouver Canucks.jpg"
+  },
+  {
+    "id": 24,
+    "image": "Anaheim Ducks.jpg"
+  },
+  {
+    "id": 25,
+    "image": "Dallas Stars.jpg"
+  },
+  {
+    "id": 26,
+    "image": "Los Angeles Kings.jpg"
+  },
+  {
+    "id": 28,
+    "image": "San Jose Sharks.jpg"
+  },
+  {
+    "id": 29,
+    "image": "Columbus Blue Jackets.jpg"
+  },
+  {
+    "id": 30,
+    "image": "Minnesota Wild.jpg"
+  },
+  {
+    "id": 52,
+    "image": "Winnipeg Jets.jpg"
+  },
+  {
+    "id": 53,
+    "image": "Arizona Coyotes.jpg"
+  },
+  {
+    "id": 54,
+    "image": "Vegas Golden Knights.jpg"
+  },
+  {
+    "id": 55,
+    "image": "Seattle Kraken.jpg"
+  }
+]

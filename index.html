@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>NHL - api</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="/index.html" class="header__logo">NHL API</a>
+        <nav class="navigation hide-nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Portfólio</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link scroll-to" data-home="home">Domov</a>
+            </li>
+            <li class="navigation__item">
+              <a href="/timy.html" class="navigation__link">Tímy</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="navigation__button-mobile">
+          <i class="ph-list navigation__icon navigation__icon--open"></i>
+          <i class="ph-x navigation__icon navigation__icon--close hide-nav"></i>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="section-hero--home">
+        <div class="hero">
+          <h1 class="heading-primary">
+            Nhl tímy a ich jednotlivé štatistiky a informácie
+          </h1>
+          <a class="btn scroll-to" data-information="information"
+            >Viac informácii</a
+          >
+          <p class="hero__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            veritatis molestiae maxime?
+          </p>
+          <ul class="hero__nav">
+            <li>
+              <a class="btn scroll-to" data-home="home">Domov</a>
+            </li>
+            <li><a href="/timy.html" class="btn">Tímy</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="information" class="section-about">
+        <div class="about">
+          <div class="heading-box">
+            <h2 class="heading-secondary">O aplikácii</h2>
+          </div>
+
+          <div class="about__box about__box--1">
+            <div class="about__text-box">
+              <h3 class="heading-tertiary about__heading">
+                Informácie o aplikácii
+              </h3>
+              <p class="about__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                similique fuga officia harum consequatur quam unde, libero
+                cumque earum voluptatibus minus est veritatis, atque ad
+                accusamus autem! Adipisci animi eius harum repellat ipsa.
+                Accusantium, repellendus pariatur?
+              </p>
+              <p class="about__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                similique fuga officia harum consequatur quam unde, libero
+                cumque earum voluptatibus minus est veritatis, atque ad
+                accusamus autem! Adipisci animi eius harum repellat ipsa.
+                Accusantium, repellendus pariatur?
+              </p>
+            </div>
+          </div>
+
+          <div class="about__box about__box--2">
+            <div class="about__photo-box">
+              <img
+                src="./imgs/Hraci-hero-photo (4).jpg"
+                alt="kek"
+                class="img"
+              />
+            </div>
+          </div>
+
+          <div class="about__box about__box--3">
+            <div class="about__photo-box">
+              <img
+                src="./imgs/Hraci-hero-photo (4).jpg"
+                alt="kek"
+                class="img"
+              />
+            </div>
+          </div>
+
+          <div class="about__box about__box--4">
+            <div class="about__text-box">
+              <h3 class="heading-tertiary about__heading">
+                Informácie o aplikácii
+              </h3>
+              <p class="about__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                similique fuga officia harum consequatur quam unde, libero
+                cumque earum voluptatibus minus est veritatis, atque ad
+                accusamus autem! Adipisci animi eius harum repellat ipsa.
+                Accusantium, repellendus pariatur?
+              </p>
+              <p class="about__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                similique fuga officia harum consequatur quam unde, libero
+                cumque earum voluptatibus minus est veritatis, atque ad
+                accusamus autem! Adipisci animi eius harum repellat ipsa.
+                Accusantium, repellendus pariatur?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-footer">
+      <div class="footer">
+        <p class="footer__copyright">
+          Copyright &copy; 2023 Bryan Richard Vandas Všetky práva vyhradené.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/phosphor-icons" defer></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

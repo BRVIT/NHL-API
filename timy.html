@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>NHL - api</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="#" class="header__logo">NHL API</a>
+        <nav class="navigation hide-nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Portfólio</a>
+            </li>
+            <li class="navigation__item">
+              <a href="/index.html" class="navigation__link">Domov</a>
+            </li>
+            <li class="navigation__item">
+              <a href="/timy.html" class="navigation__link">Tímy</a>
+            </li>
+            <li class="navigation__item table">
+              <a class="navigation__link table">Tabuľka</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="navigation__button-mobile">
+          <i class="ph-list navigation__icon navigation__icon--open"></i>
+          <i class="ph-x navigation__icon navigation__icon--close hide-nav"></i>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-hero--teams">
+        <div class="hero hero--teams">
+          <h1 class="heading-primary">Nhl tímy</h1>
+          <p class="hero__text">Vyhľadaj si svoj tým a zisti jeho štatistiky</p>
+        </div>
+      </section>
+
+      <section class="section-teams">
+        <div class="teams">
+          <div class="teams__search">
+            <input
+              type="text"
+              class="teams__search-input"
+              data-team-finder
+              placeholder="Vyhľadaj si svoj tím"
+            />
+          </div>
+
+          <div class="teams__small-tables" data-teams-table>
+            <div class="teams__table-closing-box">
+              <h3 class="heading-tertiary">Celková tabuľka</h3>
+              <a class="heading-tertiary table">Zatvoriť tabuľku</a>
+            </div>
+            <table class="teams__small-table--1">
+              <thead>
+                <tr class="small-table__row">
+                  <th>#</th>
+                  <th class="small-table__title">Názov klubu</th>
+                  <th>OZ</th>
+                  <th>V</th>
+                  <th>P</th>
+                  <th>PP</th>
+                  <th>B</th>
+                </tr>
+              </thead>
+              <tbody data-overall-standings></tbody>
+            </table>
+
+            <table class="teams__small-table--1">
+              <h3 class="heading-tertiary">Východná konferencia</h3>
+              <thead>
+                <tr class="small-table__row">
+                  <th>#</th>
+                  <th class="small-table__title">Názov klubu</th>
+                  <th>OZ</th>
+                  <th>V</th>
+                  <th>P</th>
+                  <th>PP</th>
+                  <th>B</th>
+                </tr>
+              </thead>
+              <tbody data-east-standing></tbody>
+            </table>
+
+            <table class="teams__small-table--1">
+              <thead>
+                <h3 class="heading-tertiary">Západná konferencia</h3>
+                <tr class="small-table__row">
+                  <th>#</th>
+                  <th class="small-table__title">Názov klubu</th>
+                  <th>OZ</th>
+                  <th>V</th>
+                  <th>P</th>
+                  <th>PP</th>
+                  <th>B</th>
+                </tr>
+              </thead>
+              <tbody data-west-standing></tbody>
+            </table>
+          </div>
+
+          <div class="teams__rendered">
+            <h3 class="heading-tertiary rendered-teams__heading">
+              Všetky tímy
+            </h3>
+            <div
+              class="teams__rendered-teams teams__rendered-teams--all"
+              data-all-teams
+            ></div>
+
+            <h3 class="heading-tertiary rendered-teams__heading">
+              Východná konferencia (Tímy)
+            </h3>
+            <div
+              class="teams__rendered-teams teams__rendered-teams--east"
+              data-east-teams
+            ></div>
+
+            <h3 class="heading-tertiary rendered-teams__heading">
+              Západná konferencia (Tímy)
+            </h3>
+
+            <div
+              class="teams__rendered-teams teams__rendered-teams--west"
+              data-west-teams
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-footer">
+      <div class="footer">
+        <p class="footer__copyright">
+          Copyright &copy; 2023 Všetky práva vyhradené, zakladateľ Bryan Richard
+          Vandas
+        </p>
+      </div>
+    </footer>
+
+    <div class="" id="overlay"></div>
+    <template id="table">
+      <tr class="small-table__row">
+        <td data-position class="skeleton skeleton-table"></td>
+        <td class="small-table__title skeleton skeleton-table" data-name></td>
+        <td data-games class="skeleton skeleton-table"></td>
+        <td data-wins class="skeleton skeleton-table"></td>
+        <td data-loses class="skeleton skeleton-table"></td>
+        <td data-loses-overtime class="skeleton skeleton-table"></td>
+        <td data-points class="skeleton skeleton-table"></td>
+      </tr>
+    </template>
+
+    <template id="team">
+      <div class="team">
+        <div class="skeleton skeleton-img" data-skeleton-img>
+          <img
+            alt="tim"
+            src="/imgs/background waterfall white 1920x1200.jpg"
+            data-nhl-logo
+          />
+        </div>
+        <p class="team__text skeleton skeleton-text" data-name></p>
+        <button
+          class="btn-team show-popup skeleton skeleton-button"
+          data-btn
+        ></button>
+        <div class="team__pop-up hide">
+          <i
+            class="pop-up__close-button skeleton skeleton-close-button"
+            data-close-button-popup
+          ></i>
+          <h3
+            class="heading-tertiary skeleton skeleton-popup-heading"
+            data-heading-name
+          ></h3>
+          <div class="pop-up__box">
+            <div class="pop-up__textbox pop-up__textbox--left">
+              <p class="skeleton skeleton-popup-text">
+                Celý názov: <span data-full-name-popup></span>
+              </p>
+              <p class="skeleton skeleton-popup-text">
+                Skratka: <span data-abbreviation-popup></span>
+              </p>
+              <p class="skeleton skeleton-popup-text">
+                Rok založenia: <span data-first-year-popup></span>
+              </p>
+              <p class="skeleton skeleton-popup-text">
+                Názov klubu: <span data-team-name-popup></span>
+              </p>
+            </div>
+            <div class="pop-up__textbox pop-up__textbox--right">
+              <p class="skeleton skeleton-popup-text">
+                Lokácia: <span data-location-name-popup></span>
+              </p>
+              <p class="skeleton skeleton-popup-text">
+                Mesto: <span data-city-name-popup></span>
+              </p>
+              <p class="skeleton skeleton-popup-text">
+                Konferencia: <span data-conference-name-popup></span>
+              </p>
+              <p class="skeleton skeleton-popup-text">
+                Divízia: <span data-division-name-popup></span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="pop-up__image-holder skeleton skeleton-img"
+            data-skeleton-img-popup
+          >
+            <img
+              alt="logo tímu"
+              src="/imgs/background waterfall white 1920x1200-popup.jpg"
+              data-nhl-logo-popup
+            />
+          </div>
+          <a
+            class="btn-team-link skeleton skeleton-popup-button"
+            data-official-site-url-popup
+          ></a>
+        </div>
+      </div>
+    </template>
+    <script src="https://unpkg.com/phosphor-icons" defer></script>
+    <script type="module" src="/teams.js"></script>
+  </body>
+</html>
