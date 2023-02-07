@@ -247,6 +247,7 @@
 .teams__rendered {
   grid-column: 5 / 13;
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 3.2rem;
   border-left: 2px solid #000;
@@ -258,6 +259,8 @@
 }
 
 .teams__rendered-teams--all {
+  min-width: 100%;
+  min-height: 100%;
   display: grid;
   grid-row: 2 / 3;
   grid-template-columns: repeat(4, 1fr);
@@ -288,6 +291,7 @@
 
 .team {
   display: flex;
+  width: 100%;
   flex-direction: column;
   gap: 0.8rem;
   align-items: center;
@@ -423,10 +427,9 @@
   margin-bottom: 0.8rem;
 }
 
-.skeleton-img img {
-  max-width: 100%;
-  height: auto;
-  visibility: hidden;
+.skeleton-img {
+  width: 15rem;
+  height: 9rem;
 }
 
 .skeleton-text {

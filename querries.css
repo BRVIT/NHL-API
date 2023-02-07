@@ -66,6 +66,11 @@
   .teams__rendered-teams--west {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .skeleton-img {
+    width: 18rem;
+    height: 9rem;
+  }
 }
 
 @media (max-width: 56.25em) {
@@ -110,6 +115,9 @@
 
   .about__photo-box .img {
     margin-top: 0;
+  }
+  .skeleton-img {
+    width: 15rem;
   }
 }
 
@@ -165,6 +173,19 @@
   }
   .teams__rendered-teams {
     padding: 0;
+  }
+
+  .skeleton-img {
+    width: 25.5rem;
+    height: 14rem;
+  }
+}
+
+@media (max-width: 43.75em) {
+  /* 43.75 = 700px */
+  .skeleton-img {
+    width: 21rem;
+    height: 11rem;
   }
 }
 
@@ -292,6 +313,27 @@
     grid-column: 2 / 12;
     font-size: 1.4rem;
     text-align: center;
+  }
+
+  .skeleton-img {
+    width: 27.5rem;
+    height: 14rem;
+  }
+}
+
+@media (max-width: 31.25em) {
+  /* 31.25 = 500 */
+  .skeleton-img {
+    width: 21rem;
+    height: 11rem;
+  }
+}
+
+@media (max-width: 25em) {
+  /* 25 = 400 */
+  .skeleton-img {
+    width: 15rem;
+    height: 11rem;
   }
 }
 

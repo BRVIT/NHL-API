@@ -6,8 +6,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "index.html"),
-        nested: resolve(__dirname, "timy.html"),
+        index: resolve(__dirname, "index.html"),
+        timy: resolve(__dirname, "timy.html"),
         json: resolve(__dirname, "teamsPhoto.json"),
       },
     },
